@@ -51,3 +51,32 @@ export const Fonts = Platform.select({
     mono: "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   },
 });
+export const lightTheme = {
+  colors: {
+    primary: '#D63384',
+    secondary: '#F8C8DC',
+    background: '#FFF5F8',
+    text: '#2B1B22',
+    muted: '#7A5A66',
+    card: '#FFFFFF',
+    accent: '#B5179E',
+    border: '#eee',
+    switchTrack: '#ccc',
+  },
+};
+
+export const darkTheme = {
+  colors: {
+    primary: '#E0529E',
+    secondary: '#4A2D3A',
+    background: '#1A0F14',
+    text: '#F5E6EC',
+    muted: '#A0808C',
+    card: '#2B1B22',
+    accent: '#E066D8',
+    border: '#3D2A32',
+    switchTrack: '#555',
+  },
+};
+
+export type ThemeColors = typeof lightTheme.colors;
